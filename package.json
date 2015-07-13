@@ -4,12 +4,14 @@
   "description": "RefluxJS example",
   "dependencies": {
     "react": "^0.13",
-    "reflux": "^0.2"
+    "reflux": "^0.2",
+    "superagent": "^1.2.0"
   },
   "devDependencies": {
     "browserify": "^10",
     "eslint": "^0",
     "eslint-plugin-react": "^2",
+    "http-server": "^0.8.0",
     "power-assert": "^0",
     "reactify": "^1",
     "watchify": "^3"
@@ -17,7 +19,8 @@
   "scripts": {
     "build": "browserify -v -d --extension=.jsx lib/app.jsx -o public/js/bundle.js",
     "watch": "watchify   -v -d --extension=.jsx lib/app.jsx -o public/js/bundle.js",
-    "lint": "eslint lib"
+    "lint": "eslint lib",
+    "start": "http-server --cors -o -a localhost"
   },
   "author": "Toshiyuki Nakamura",
   "license": "MIT",

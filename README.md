@@ -9,8 +9,8 @@ npm i
 # 手動ビルド
 npm run build
 
-# サンプルのファイルを開きます
-open public/index.html
+# テスト用サーバを起動し、ブラウザを開きます
+npm start
 
 # 自動ビルド
 npm run watch
