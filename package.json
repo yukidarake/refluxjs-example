@@ -20,7 +20,7 @@
     "build": "browserify -v -d --extension=.jsx lib/app.jsx -o public/js/bundle.js",
     "watch": "watchify   -v -d --extension=.jsx lib/app.jsx -o public/js/bundle.js",
     "lint": "eslint lib",
-    "start": "http-server --cors -o -a localhost"
+    "start": "http-server -o -a localhost"
   },
   "author": "Toshiyuki Nakamura",
   "license": "MIT",
